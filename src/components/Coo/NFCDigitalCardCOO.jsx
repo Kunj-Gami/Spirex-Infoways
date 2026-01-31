@@ -77,7 +77,7 @@ END:VCARD`;
         initial={{ opacity: 0, y: 50, scale: 0.97 }}
         animate={loaded ? { opacity: 1, y: 0, scale: 1 } : {}}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="w-full lg:max-w-sm bg-white rounded-[28px] shadow-md overflow-hidden my-5"
+        className="w-full lg:max-w-sm bg-white rounded-[28px] shadow-md overflow-hidden"
       >
 
         {/* HEADER */}
