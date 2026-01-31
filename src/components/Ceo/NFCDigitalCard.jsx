@@ -72,13 +72,13 @@ END:VCARD`;
   };
 
   return (
-    <div className="min-h-screen outfit bg-gradient-to-br from-blue-50 via-white to-blue-100 flex items-center justify-center px-4">
+    <div className="min-h-screen outfit bg-white flex items-center justify-center md:px-4">
 
       <motion.div
         initial={{ opacity: 0, y: 50, scale: 0.97 }}
         animate={loaded ? { opacity: 1, y: 0, scale: 1 } : {}}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="w-full max-w-sm bg-white rounded-[28px] shadow-[0_25px_70px_rgba(37,99,235,0.25)] overflow-hidden my-5"
+        className="w-full lg:max-w-sm bg-white rounded-[28px] shadow-md overflow-hidden my-5"
       >
 
         {/* HEADER */}
@@ -151,7 +151,7 @@ END:VCARD`;
         </div>
 
         {/* SERVICES */}
-        <div className="px-6 mt-6">
+      {/* <div className="px-6 mt-6">
           <p className="text-sm font-semibold text-gray-800 mb-3">
             Services
           </p>
@@ -165,7 +165,7 @@ END:VCARD`;
               </div>
             ))}
           </div>
-        </div>
+        </div>   */}
 
         {/* SAVE CONTACT */}
         <div className="px-6 mt-6">
