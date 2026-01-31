@@ -123,7 +123,8 @@ END:VCARD`;
             icon={MessageCircle}
             label="WhatsApp"
             value="Chat on WhatsApp"
-            href={`https://wa.me/${data.whatsapp.replace("+", "")}`}
+           href={`https://api.whatsapp.com/send?phone=${data.whatsapp.replace(/[^0-9]/g, "")}`}
+
           />
 
           <InputLink
